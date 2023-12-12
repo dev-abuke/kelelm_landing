@@ -1,4 +1,4 @@
-import Feature from "../components/Feature";
+import Feature from "../components/Features";
 import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";

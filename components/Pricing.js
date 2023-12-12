@@ -1,7 +1,9 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
 import Testimoni from "./Testimoni";
+import ContactUs from "./ContactUs";
 import ButtonPrimary from "./misc/ButtonPrimary";
+import { TypeAnimation } from 'react-type-animation';
 import ButtonOutline from "./misc/ButtonOutline.";
 import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
@@ -21,9 +23,9 @@ const Pricing = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
+              className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black-600 leading-relaxed"
             >
-              Choose Your Plan
+              Work <span className="text-indigo-900">With</span> Us
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
@@ -33,17 +35,17 @@ const Pricing = () => {
               and cheerfully.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center">
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 items-center sm:grid-cols-3 gap-2 lg:gap-2 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+            <ScrollAnimationWrapper className="flex justify-center max-h-[90%]">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale : 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
+                className="flex flex-col justify-center items-center bg-white-500 shadow-xl max-w-md rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                // whileHover={{
+                //   scale : 1.1,
+                //   transition: {
+                //     duration: .2
+                //   }
+                // }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
@@ -54,40 +56,37 @@ const Pricing = () => {
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Free Plan
+                  I am a Student
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
+                    Get Personalized Tutor
                   </li>
                   <li className="relative check custom-list my-2">
-                    Encrypted Connection
+                    Improve Your Academic Performance
                   </li>
                   <li className="relative check custom-list my-2">
-                    No Traffic Logs
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Works on All Devices
+                    Enhance Your Learning Skills
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4 ">
-                    Free
+                    {/* Free */}
                   </p>
-                  <ButtonOutline>Select</ButtonOutline>
+                  <ButtonOutline>Get Started</ButtonOutline>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale : 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
+                className="flex bg-white-500 shadow-xl flex-col justify-center items-center rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                // whileHover={{
+                //   scale : 1.1,
+                //   transition: {
+                //     duration: .2
+                //   }
+                // }}
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
@@ -98,43 +97,40 @@ const Pricing = () => {
                 />
               </div>
               <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Standard Plan{" "}
+                I am a Tutor{" "}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                Flexible Work Hours
                 </li>
                 <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                  Professional Development
                 </li>
                 <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                  Diverse Teaching Experiences
                 </li>
                 <li className="relative check custom-list my-2">
                   Works on All Devices
                 </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $9 <span className="text-black-500">/ mo</span>
+                  {/* $9 <span className="text-black-500">/ mo</span> */}
                 </p>
-                <ButtonOutline>Select</ButtonOutline>
+                <ButtonOutline>Get Started</ButtonOutline>
               </div>
               </motion.div>
             </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
+            <ScrollAnimationWrapper className="flex justify-center max-h-[90%]">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale : 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
+                className="flex bg-white-500 shadow-xl flex-col justify-center items-center  rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                // whileHover={{
+                //   scale : 1.1,
+                //   transition: {
+                //     duration: .2
+                //   }
+                // }}
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
@@ -145,34 +141,25 @@ const Pricing = () => {
                 />
               </div>
               <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Premium Plan{" "}
+                I am a Parent{" "}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                Long-Term Academic Benefits For Child
                 </li>
                 <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                  Regular Progress Updates
                 </li>
                 <li className="relative check custom-list my-2">
-                  No Traffic Logs
-                </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
-                </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
-                <li className="relative check custom-list my-2">
-                  Get New Features{" "}
+                  Flexible Scheduling
                 </li>
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $12 <span className="text-black-500">/ mo</span>
+                  {/* $12 <span className="text-black-500">/ mo</span> */}
                 </p>
 
-                <ButtonOutline>Select</ButtonOutline>
+                <ButtonOutline>Get Started</ButtonOutline>
               </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -183,10 +170,20 @@ const Pricing = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-              Huge Global Network of Fast VPN{" "}
+              Huge Global Network of <span className="text-indigo-900">
+                <TypeAnimation sequence={[
+                  "Tutors",
+                  1000,
+                  "Students",
+                  1000,
+                ]}
+                speed={50}
+                repeat={Infinity}
+                style={{}}
+              /></span>{" "}
             </motion.h3>
             <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
-              See LaslesVPN everywhere to make it easier for you when you move
+              See <span>Kelem</span> everywhere to make it easier for you when you move
               locations.
             </motion.p>
           </ScrollAnimationWrapper>
@@ -231,7 +228,7 @@ const Pricing = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-              Trusted by Thousands of Happy Customer{" "}
+              Trusted by Hundreds of Happy Customer{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
@@ -242,18 +239,22 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
-            <motion.div variants={scrollAnimation}>
+          <motion.div variants={scrollAnimation}>
               <Testimoni />
             </motion.div>
+            {/* <motion.div variants={scrollAnimation}> */}
+              
+            {/* </motion.div> */}
           </ScrollAnimationWrapper>
+          <ContactUs />
           <ScrollAnimationWrapper className="relative w-full mt-16">
             <motion.div variants={scrollAnimation} custom={{duration: 3}}>
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                  <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+                  <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-semibold">
                     Subscribe Now for <br /> Get Special Features!
                   </h5>
-                  <p>Let's subscribe with us and find the fun.</p>
+                  <p>Join us and find the Ideal fun.</p>
                 </div>
                 <ButtonPrimary>Get Started</ButtonPrimary>
               </div>

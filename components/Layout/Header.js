@@ -3,7 +3,7 @@ import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import LogoVPN from "../../public/assets/Logo.svg";
+import LogoBook from "../../public/assets/Logo_name_book.svg";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -23,7 +23,7 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+            <LogoBook className="h-10 w-auto" />
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -36,10 +36,10 @@ const Header = () => {
                 setActiveLink("about");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "about"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 a")
+                  ? " text-indigo-700 animation-active "
+                  : " text-black-500 hover:text-indigo-700 a")
               }
             >
               About
@@ -54,10 +54,10 @@ const Header = () => {
                 setActiveLink("feature");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "feature"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-indigo-900 animation-active "
+                  : " text-black-500 hover:text-indigo-900 ")
               }
             >
               Feature
@@ -72,10 +72,10 @@ const Header = () => {
                 setActiveLink("pricing");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "pricing"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-indigo-900 animation-active "
+                  : " text-black-500 hover:text-indigo-900 ")
               }
             >
               Pricing
@@ -90,10 +90,10 @@ const Header = () => {
                 setActiveLink("testimoni");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "testimoni"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-indigo-900 animation-active "
+                  : " text-black-500 hover:text-indigo-900 ")
               }
             >
               Testimonial
@@ -101,11 +101,11 @@ const Header = () => {
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
+              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-indigo-900 transition-all">
+                Become a Tutor
               </a>
             </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+            <ButtonOutline>Hire a Tutor</ButtonOutline>
           </div>
         </nav>
       </header>
@@ -126,7 +126,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "about"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-indigo-900 text-indigo-900"
                   : " border-transparent")
               }
             >
@@ -158,7 +158,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "feature"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-indigo-900 text-indigo-900"
                   : " border-transparent ")
               }
             >
@@ -190,7 +190,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "pricing"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-indigo-900 text-indigo-900"
                   : " border-transparent ")
               }
             >
@@ -222,7 +222,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "testimoni"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-indigo-900 text-indigo-900"
                   : " border-transparent ")
               }
             >
